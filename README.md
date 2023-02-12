@@ -26,7 +26,7 @@ Documentation was created for this API using Swagger UI Express and Swagger JSDo
 
 You can view this documentation either:
 - On your local environment - http://localhost:8666/api/docs/
-- On the server - https://crittercollector.herokuapp.com/api/docs/
+- On the server - https://crittercollector-app.herokuapp.com/api/docs/
 
 On the docs page, you can also use the "Try it out" button to interact with the API endpoints.
 
