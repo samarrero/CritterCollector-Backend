@@ -3,7 +3,7 @@ const dotenv = require('dotenv').config();
 const MongoClient = require('mongodb').MongoClient;
 const mongoURI = process.env.DB_URI || config["DB_URI"];
 const mongoOptions = { useNewUrlParser: true, useUnifiedTopology: true };
-
+print(mongoURI)
 const createServer = require('./app.js');
 
 try {
