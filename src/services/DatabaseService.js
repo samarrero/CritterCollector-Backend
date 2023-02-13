@@ -8,6 +8,7 @@ exports.findNearestSpawns = async (database, maxDistInMeters, coords) => {
         //https://docs.mongodb.com/manual/reference/operator/query/near/
         //Spawn-Points collection is indexed by coordinates so we can get the nearest spawn very simply
         const nearby_spawns = await collection.find({
+            "_id": { "$toString": "$your_objectId_field" },
             coordinates: {
                 $near: {
                     $geometry: {
