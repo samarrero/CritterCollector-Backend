@@ -2,7 +2,7 @@ const config = require('./config.json');
 const dotenv = require('dotenv').config();
 const MongoClient = require('mongodb').MongoClient;
 const mongoURI = process.env.DB_URI || config["DB_URI"];
-const mongoOptions = { useNewUrlParser: true, useUnifiedTopology: true };
+const mongoOptions = { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true };
 console.log(mongoURI)
 const createServer = require('./app.js');
 
